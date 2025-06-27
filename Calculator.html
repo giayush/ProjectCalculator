@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Calculator</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="Calculator.css">
+</head>
+<body>
+    <div class="calculator">
+    
+        <div class="display" id="display">0</div>
+
+    
+        <div class="buttons">
+            
+            <button class="button clear" id="clear">AC</button>
+            
+            <button class="button operator" data-value="&divide;">&divide;</button> <!-- Division -->
+            <button class="button operator" data-value="&times;">&times;</button> <!-- Multiplication -->
+            <button class="button operator" data-value="&minus;">&minus;</button> <!-- Subtraction -->
+
+            
+            <button class="button" data-value="7">7</button>
+            <button class="button" data-value="8">8</button>
+            <button class="button" data-value="9">9</button>
+            <button class="button operator" data-value="+">+</button> <!-- Addition -->
+
+            <button class="button" data-value="4">4</button>
+            <button class="button" data-value="5">5</button>
+            <button class="button" data-value="6">6</button>
+            <button class="button" data-value=".">.</button> <!-- Decimal point -->
+
+            <button class="button" data-value="1">1</button>
+            <button class="button" data-value="2">2</button>
+            <button class="button" data-value="3">3</button>
+            <button class="button equals" id="equals">=</button> <!-- Equals button -->
+
+            <button class="button" data-value="0">0</button>
+            
+            <button class="button" data-value="">&nbsp;</button>
+        </div>
+    </div>
+
+    <script src="Calculator.js"></script>
+</body>
+</html>
